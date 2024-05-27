@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="WeightMeasure.MainPage">
+    <StackLayout Padding="20" BackgroundColor="{DynamicResource BackgroundColor}">
+        <Label Text="Weight Converter" FontSize="24" HorizontalOptions="Center" TextColor="{DynamicResource TextColor}" />
+
+        <Entry x:Name="inputWeight" Placeholder="Enter weight" Keyboard="Numeric" BackgroundColor="{DynamicResource EntryBackgroundColor}" TextColor="Black" />
+
+        <Picker x:Name="inputUnitPicker" Title="Select Input Unit" BackgroundColor="{DynamicResource EntryBackgroundColor}" TextColor="Black">
+            <Picker.ItemsSource>
+                <x:Array Type="{x:Type x:String}">
+                    <x:String>Kilograms</x:String>
+                    <x:String>Grams</x:String>
+                    <x:String>Tons</x:String>
+                    <x:String>Pounds</x:String>
+                    <x:String>Ounces</x:String>
+                </x:Array>
+            </Picker.ItemsSource>
+        </Picker>
+
+        <Picker x:Name="outputUnitPicker" Title="Select Output Unit" BackgroundColor="{DynamicResource EntryBackgroundColor}" TextColor="Black">
+            <Picker.ItemsSource>
+                <x:Array Type="{x:Type x:String}">
+                    <x:String>Kilograms</x:String>
+                    <x:String>Grams</x:String>
+                    <x:String>Tons</x:String>
+                    <x:String>Pounds</x:String>
+                    <x:String>Ounces</x:String>
+                </x:Array>
+            </Picker.ItemsSource>
+        </Picker>
+
+        <Button Text="Convert" Clicked="OnConvertClicked" />
+
+        <StackLayout Padding="0,20,0,0">
+            <Label x:Name="resultLabel" Text="Result: " TextColor="{DynamicResource TextColor}" />
+        </StackLayout>
+
+        <Switch x:Name="ThemeSwitch" Toggled="OnThemeSwitchToggled" />
+        <Label Text="Toggle Light/Dark Mode" TextColor="{DynamicResource TextColor}" HorizontalOptions="Center" />
+    </StackLayout>
+</ContentPage>
