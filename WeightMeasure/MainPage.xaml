@@ -5,9 +5,9 @@
     <StackLayout Padding="20" BackgroundColor="{DynamicResource BackgroundColor}">
         <Label Text="Weight Converter" FontSize="24" HorizontalOptions="Center" TextColor="{DynamicResource TextColor}" />
 
-        <Entry x:Name="inputWeight" Placeholder="Enter weight" Keyboard="Numeric" BackgroundColor="{DynamicResource EntryBackgroundColor}" TextColor="Black" />
+        <Entry x:Name="inputWeight" Placeholder="Enter weight" Keyboard="Numeric" BackgroundColor="White" TextColor="{DynamicResource EntryTextColor}" />
 
-        <Picker x:Name="inputUnitPicker" Title="Select Input Unit" BackgroundColor="{DynamicResource EntryBackgroundColor}" TextColor="Black">
+        <Picker x:Name="inputUnitPicker" Title="Select Input Unit" BackgroundColor="White" TextColor="{DynamicResource EntryTextColor}">
             <Picker.ItemsSource>
                 <x:Array Type="{x:Type x:String}">
                     <x:String>Kilograms</x:String>
@@ -19,7 +19,7 @@
             </Picker.ItemsSource>
         </Picker>
 
-        <Picker x:Name="outputUnitPicker" Title="Select Output Unit" BackgroundColor="{DynamicResource EntryBackgroundColor}" TextColor="Black">
+        <Picker x:Name="outputUnitPicker" Title="Select Output Unit" BackgroundColor="White" TextColor="{DynamicResource EntryTextColor}">
             <Picker.ItemsSource>
                 <x:Array Type="{x:Type x:String}">
                     <x:String>Kilograms</x:String>
@@ -36,8 +36,5 @@
         <StackLayout Padding="0,20,0,0">
             <Label x:Name="resultLabel" Text="Result: " TextColor="{DynamicResource TextColor}" />
         </StackLayout>
-
-        <Switch x:Name="ThemeSwitch" Toggled="OnThemeSwitchToggled" />
-        <Label Text="Toggle Light/Dark Mode" TextColor="{DynamicResource TextColor}" HorizontalOptions="Center" />
     </StackLayout>
 </ContentPage>

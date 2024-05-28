@@ -59,20 +59,6 @@ namespace WeightMeasure
             };
         }
 
-        private void OnThemeSwitchToggled(object sender, ToggledEventArgs e)
-        {
-            if (e.Value)
-            {
-                // Switch to Dark Theme
-                Application.Current.Resources.MergedDictionaries.Clear();
-                Application.Current.Resources.MergedDictionaries.Add(new DarkTheme());
-            }
-            else
-            {
-                // Switch to Light Theme
-                Application.Current.Resources.MergedDictionaries.Clear();
-                Application.Current.Resources.MergedDictionaries.Add(new LightTheme());
-            }
-        }
+        
     }
 }

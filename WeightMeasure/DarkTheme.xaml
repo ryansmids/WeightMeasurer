@@ -4,6 +4,6 @@
                     x:Class="WeightMeasure.DarkTheme">
     <Color x:Key="BackgroundColor">#000000</Color>
     <Color x:Key="TextColor">#FFFFFF</Color>
-    <Color x:Key="EntryBackgroundColor">#000000</Color>
-    <Color x:Key="EntryTextColor">#FFFFFF</Color>
+    <Color x:Key="EntryBackgroundColor">#FFFFFF</Color>
+    <Color x:Key="EntryTextColor">#000000</Color>
 </ResourceDictionary>
