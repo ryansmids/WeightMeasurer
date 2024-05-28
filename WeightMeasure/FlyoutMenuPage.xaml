@@ -1,17 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <FlyoutPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:local="clr-namespace:WeightMeasure"
-             x:Class="WeightMeasure.FlyoutMenuPage">
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:local="clr-namespace:WeightMeasure"
+            x:Class="WeightMeasure.FlyoutMenuPage">
+
     <FlyoutPage.Flyout>
         <ContentPage Title="Menu" BackgroundColor="{DynamicResource BackgroundColor}">
             <StackLayout>
                 <Button Text="Home" Clicked="OnHomeClicked"
-                        CornerRadius="0"/>
+                        CornerRadius="0" />
                 <Button Text="About" Clicked="OnAboutClicked"
-                        CornerRadius="0"/>
+                        CornerRadius="0" />
                 <Button Text="Hello World" Clicked="OnHelloWorldClicked"
-                        CornerRadius="0"/>
+                        CornerRadius="0" />
                 <StackLayout Orientation="Horizontal" Padding="10">
                     <Label Text="Dark Mode" VerticalOptions="Center" TextColor="{DynamicResource TextColor}" />
                     <Switch x:Name="ThemeSwitch" Toggled="OnThemeSwitchToggled" />
@@ -19,6 +20,7 @@
             </StackLayout>
         </ContentPage>
     </FlyoutPage.Flyout>
+
     <FlyoutPage.Detail>
         <NavigationPage>
             <x:Arguments>
