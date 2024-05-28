@@ -1,10 +1,9 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="WeightMeasure.MainPage">
     <StackLayout Padding="20" BackgroundColor="{DynamicResource BackgroundColor}">
         <Label Text="Weight Converter" FontSize="24" HorizontalOptions="Center" TextColor="{DynamicResource TextColor}" />
-
+        
         <Entry x:Name="inputWeight" Placeholder="Enter weight" Keyboard="Numeric" BackgroundColor="White" TextColor="{DynamicResource EntryTextColor}" />
 
         <Picker x:Name="inputUnitPicker" Title="Select Input Unit" BackgroundColor="White" TextColor="{DynamicResource EntryTextColor}">
@@ -14,7 +13,8 @@
                     <x:String>Grams</x:String>
                     <x:String>Tons</x:String>
                     <x:String>Pounds</x:String>
-                    <x:String>Ounces</x:String>
+                    <x:String>Ounces (UK/US)</x:String>
+                    <x:String>Ons (NL)</x:String>
                 </x:Array>
             </Picker.ItemsSource>
         </Picker>
@@ -26,7 +26,8 @@
                     <x:String>Grams</x:String>
                     <x:String>Tons</x:String>
                     <x:String>Pounds</x:String>
-                    <x:String>Ounces</x:String>
+                    <x:String>Ounces (UK/US)</x:String>
+                    <x:String>Ons (NL)</x:String>
                 </x:Array>
             </Picker.ItemsSource>
         </Picker>

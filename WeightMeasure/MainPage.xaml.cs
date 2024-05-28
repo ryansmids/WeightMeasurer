@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace WeightMeasure
+﻿namespace WeightMeasure
 {
     public partial class MainPage : ContentPage
     {
@@ -40,8 +38,9 @@ namespace WeightMeasure
                 "Kilograms" => weight,
                 "Grams" => weight / 1000,
                 "Tons" => weight * 1000,
-                "Pounds" => weight / 2.20462,
-                "Ounces" => weight / 35.274,
+                "Pounds" => weight * 0.453592,
+                "Ounces (UK/US)" => weight * 0.0283495,
+                "Ons (NL)" => weight * 0.1,
                 _ => throw new NotImplementedException($"Conversion from {unit} is not implemented."),
             };
         }
@@ -53,12 +52,11 @@ namespace WeightMeasure
                 "Kilograms" => weightInKg,
                 "Grams" => weightInKg * 1000,
                 "Tons" => weightInKg / 1000,
-                "Pounds" => weightInKg * 2.20462,
-                "Ounces" => weightInKg * 35.274,
+                "Pounds" => weightInKg / 0.453592,
+                "Ounces (UK/US)" => weightInKg / 0.0283495,
+                "Ons (NL)" => weightInKg / 0.1,
                 _ => throw new NotImplementedException($"Conversion to {unit} is not implemented."),
             };
         }
-
-        
     }
 }
