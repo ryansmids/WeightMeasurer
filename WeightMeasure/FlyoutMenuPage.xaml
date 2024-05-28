@@ -6,9 +6,12 @@
     <FlyoutPage.Flyout>
         <ContentPage Title="Menu" BackgroundColor="{DynamicResource BackgroundColor}">
             <StackLayout>
-                <Button Text="Home" Clicked="OnHomeClicked" />
-                <Button Text="About" Clicked="OnAboutClicked" />
-                <Button Text="Hello World" Clicked="OnHelloWorldClicked" />
+                <Button Text="Home" Clicked="OnHomeClicked"
+                        CornerRadius="0"/>
+                <Button Text="About" Clicked="OnAboutClicked"
+                        CornerRadius="0"/>
+                <Button Text="Hello World" Clicked="OnHelloWorldClicked"
+                        CornerRadius="0"/>
                 <StackLayout Orientation="Horizontal" Padding="10">
                     <Label Text="Dark Mode" VerticalOptions="Center" TextColor="{DynamicResource TextColor}" />
                     <Switch x:Name="ThemeSwitch" Toggled="OnThemeSwitchToggled" />
