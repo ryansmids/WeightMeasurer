@@ -1,12 +1,18 @@
-﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="WeightMeasure.MainPage"
-             Title="Weight Converter">
+﻿<ContentPage
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="WeightMeasure.MainPage"
+    Title="Weight Converter">
+
+    <!-- Hoofd container layout met padding -->
     <StackLayout Padding="20" BackgroundColor="{DynamicResource BackgroundColor}">
+        <!-- Pagina titel -->
         <Label Text="Weight Converter" FontSize="24" HorizontalOptions="Center" TextColor="{DynamicResource TextColor}" />
         
+        <!-- Invoerveld voor gewicht -->
         <Entry x:Name="inputWeight" Placeholder="Enter weight" Keyboard="Numeric" BackgroundColor="White" TextColor="{DynamicResource EntryTextColor}" />
 
+        <!-- Picker voor het selecteren van invoereenheid -->
         <Picker x:Name="inputUnitPicker" Title="Select Input Unit" BackgroundColor="White" TextColor="{DynamicResource EntryTextColor}">
             <Picker.ItemsSource>
                 <x:Array Type="{x:Type x:String}">
@@ -20,6 +26,7 @@
             </Picker.ItemsSource>
         </Picker>
 
+        <!-- Picker voor het selecteren van uitvoereenheid -->
         <Picker x:Name="outputUnitPicker" Title="Select Output Unit" BackgroundColor="White" TextColor="{DynamicResource EntryTextColor}">
             <Picker.ItemsSource>
                 <x:Array Type="{x:Type x:String}">
@@ -33,10 +40,12 @@
             </Picker.ItemsSource>
         </Picker>
 
+        <!-- Convert-knop -->
         <Button Text="Convert" Clicked="OnConvertClicked" />
-
+        
+        <!-- Container voor het weergeven van het resultaat -->
         <StackLayout Padding="0,20,0,0">
-            <Label x:Name="resultLabel" Text="Result: " TextColor="{DynamicResource TextColor}" />
+            <Label x:Name="resultLabel" Text="Result:" TextColor="{DynamicResource TextColor}" />
         </StackLayout>
     </StackLayout>
 </ContentPage>

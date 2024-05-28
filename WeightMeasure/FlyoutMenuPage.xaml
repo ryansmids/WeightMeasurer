@@ -4,15 +4,19 @@
             xmlns:local="clr-namespace:WeightMeasure"
             x:Class="WeightMeasure.FlyoutMenuPage">
 
+    <!-- Dit is het menu aan de linkerkant -->
     <FlyoutPage.Flyout>
         <ContentPage Title="Menu" BackgroundColor="{DynamicResource BackgroundColor}">
             <StackLayout>
+                <!-- Knoppen voor navigatie -->
                 <Button Text="Weight Converter" Clicked="OnHomeClicked"
                         CornerRadius="0" />
                 <Button Text="About" Clicked="OnAboutClicked"
                         CornerRadius="0" />
                 <Button Text="Feitjes en Weetjes" Clicked="OnHelloWorldClicked"
                         CornerRadius="0" />
+
+                <!-- Schakelaar voor donkere modus -->
                 <StackLayout Orientation="Horizontal" Padding="10">
                     <Label Text="Dark Mode" VerticalOptions="Center" TextColor="{DynamicResource TextColor}" />
                     <Switch x:Name="ThemeSwitch" Toggled="OnThemeSwitchToggled" />
@@ -21,6 +25,7 @@
         </ContentPage>
     </FlyoutPage.Flyout>
 
+    <!-- Dit is de inhoudspagina -->
     <FlyoutPage.Detail>
         <NavigationPage>
             <x:Arguments>

@@ -1,31 +1,51 @@
-﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="WeightMeasure.AboutPage"
              Title="About">
+
+    <!-- Hoofd layout van de pagina -->
     <StackLayout Padding="20" BackgroundColor="{DynamicResource BackgroundColor}">
+
+        <!-- Titel van de pagina -->
         <Label Text="Over de App" FontSize="24" HorizontalOptions="Center" TextColor="{DynamicResource TextColor}" />
-        <Label Text="Deze app helpt je om gewichten te converteren tussen verschillende eenheden." 
-               FontSize="16" 
-               TextColor="{DynamicResource TextColor}"
-               Margin="0,20,0,0" />
-        <Label Text="Hoe te gebruiken:" 
-               FontSize="20" 
-               TextColor="{DynamicResource TextColor}"
-               Margin="0,20,0,10" />
-        <Label Text="1. Voer het gewicht in dat je wilt converteren in het invoerveld." 
-               FontSize="16" 
+
+        <!-- Beschrijving van de app -->
+        <Label Text="Deze app helpt je om gewichten te converteren tussen verschillende eenheden."
+               Margin="0,10,0,0"
+               FontSize="16"
                TextColor="{DynamicResource TextColor}" />
-        <Label Text="2. Selecteer de eenheid van het ingevoerde gewicht in het eerste dropdown menu." 
-               FontSize="16" 
+
+        <!-- Gebruiksaanwijzing -->
+        <Label Text="Hoe te gebruiken:"
+               FontSize="20"
+               Margin="0,10,0,0"
                TextColor="{DynamicResource TextColor}" />
-        <Label Text="3. Selecteer de eenheid waarnaar je wilt converteren in het tweede dropdown menu." 
-               FontSize="16" 
+
+        <!-- Stap 1: Instructie -->
+        <Label Text="1. Voer het gewicht in dat je wilt converteren in het invoerveld."
+               FontSize="16"
                TextColor="{DynamicResource TextColor}" />
-        <Label Text="4. Druk op de 'Convert' knop om het resultaat te zien." 
-               FontSize="16" 
+
+        <!-- Stap 2: Instructie -->
+        <Label Text="2. Selecteer de eenheid van het ingevoerde gewicht in het eerste dropdown menu."
+               FontSize="16"
                TextColor="{DynamicResource TextColor}" />
-        <Label Text="5. Gebruik de 'Dark Mode' schakelaar in het menu om te wisselen tussen licht en donker thema." 
-               FontSize="16" 
+
+        <!-- Stap 3: Instructie -->
+        <Label Text="3. Selecteer de eenheid waarna je wilt converteren in het tweede dropdown menu."
+               FontSize="16"
                TextColor="{DynamicResource TextColor}" />
+
+        <!-- Stap 4: Instructie -->
+        <Label Text="4. Druk op de 'Convert' knop om het resultaat te zien."
+               FontSize="16"
+               TextColor="{DynamicResource TextColor}" />
+
+        <!-- Stap 5: Instructie -->
+        <Label Text="5. Gebruik de 'Dark Mode' schakelaar in het menu om te wisselen tussen licht en donker thema."
+               FontSize="16"
+               TextColor="{DynamicResource TextColor}" />
+
     </StackLayout>
 </ContentPage>
