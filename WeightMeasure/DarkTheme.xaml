@@ -6,4 +6,5 @@
     <Color x:Key="TextColor">#FFFFFF</Color>
     <Color x:Key="EntryBackgroundColor">#FFFFFF</Color>
     <Color x:Key="EntryTextColor">#000000</Color>
+    <Color x:Key="FrameBackgroundColor">#1E1E1E</Color>
 </ResourceDictionary>

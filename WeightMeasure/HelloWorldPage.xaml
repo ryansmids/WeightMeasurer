@@ -1,8 +1,35 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="WeightMeasure.HelloWorldPage">
-    <StackLayout Padding="20" BackgroundColor="{DynamicResource BackgroundColor}">
-        <Label Text="Hello World" FontSize="24" HorizontalOptions="Center" TextColor="{DynamicResource TextColor}" />
-    </StackLayout>
+             x:Class="WeightMeasure.HelloWorldPage"
+             
+             Title="Feitjes en Weetjes">
+    <ScrollView>
+        <StackLayout Padding="20" BackgroundColor="{DynamicResource BackgroundColor}">
+            <Label Text="Leuke Feitjes en Weetjes over Gewichten" 
+                   FontSize="24" 
+                   HorizontalOptions="Center" 
+                   TextColor="{DynamicResource TextColor}" />
+            <Frame BackgroundColor="{DynamicResource FrameBackgroundColor}" CornerRadius="10" Padding="15" Margin="0,10">
+                <Label Text="1. Wist je dat het zwaarste voorwerp ooit gewogen een olieraffinaderij is? Het weegt meer dan 1,3 miljoen kilogram!" 
+                       FontSize="18" 
+                       TextColor="{DynamicResource TextColor}" />
+            </Frame>
+            <Frame BackgroundColor="{DynamicResource FrameBackgroundColor}" CornerRadius="10" Padding="15" Margin="0,10">
+                <Label Text="2. Een volwassen blauwe vinvis weegt gemiddeld tussen de 100.000 en 150.000 kilogram. Dat is ongeveer gelijk aan het gewicht van 15 schoolbussen!" 
+                       FontSize="18" 
+                       TextColor="{DynamicResource TextColor}" />
+            </Frame>
+            <Frame BackgroundColor="{DynamicResource FrameBackgroundColor}" CornerRadius="10" Padding="15" Margin="0,10">
+                <Label Text="3. Het zwaarste menselijke orgaan is de huid, die bij een volwassene ongeveer 16% van het totale lichaamsgewicht uitmaakt." 
+                       FontSize="18" 
+                       TextColor="{DynamicResource TextColor}" />
+            </Frame>
+            <Frame BackgroundColor="{DynamicResource FrameBackgroundColor}" CornerRadius="10" Padding="15" Margin="0,10">
+                <Label Text="4. Een gemiddelde volwassen mens weegt ongeveer 62 kilogram, maar dit kan sterk variëren afhankelijk van leeftijd, geslacht, en levensstijl." 
+                       FontSize="18" 
+                       TextColor="{DynamicResource TextColor}" />
+            </Frame>
+        </StackLayout>
+    </ScrollView>
 </ContentPage>

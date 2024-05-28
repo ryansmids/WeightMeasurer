@@ -1,6 +1,7 @@
 ﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="WeightMeasure.MainPage">
+             x:Class="WeightMeasure.MainPage"
+             Title="Weight Converter">
     <StackLayout Padding="20" BackgroundColor="{DynamicResource BackgroundColor}">
         <Label Text="Weight Converter" FontSize="24" HorizontalOptions="Center" TextColor="{DynamicResource TextColor}" />
         
